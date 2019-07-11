@@ -1,0 +1,39 @@
+# Uncomment the next line to define a global platform for your project
+ platform :ios, '8.0'
+
+target 'MoblieProject' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for MoblieProject
+
+    pod 'FMDB'                      #数据库
+    pod 'AFNetworking'              #网络
+    pod 'SDWebImage'                #图片缓存加载
+    pod 'Masonry'                   #布局
+    pod 'BlocksKit'                 #block
+    pod 'MJRefresh'                 #刷新
+    pod 'MJExtension'               #字典转模型
+    pod 'UMengUShare/Social/WeChat' #集成微信(完整版14.4M)
+    pod 'SVProgressHUD'             #小菊花
+    pod 'DZNEmptyDataSet'           #tableView 空白提示插件
+    pod 'Reachability'              #网络监听
+    pod 'ReactiveObjC'
+    pod 'SDCycleScrollView'
+    pod 'pop'
+    pod 'STPopup'
+    pod 'PYPhotoBrowser'            #图片浏览
+    pod 'TTGTagCollectionView'
+
+
+  target 'MoblieProjectTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'MoblieProjectUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

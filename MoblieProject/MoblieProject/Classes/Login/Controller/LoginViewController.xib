@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController">
+            <connections>
+                <outlet property="WXLoginButton" destination="lCl-2C-qQn" id="T3U-xZ-T8r"/>
+                <outlet property="appIcon" destination="GD1-ej-b2v" id="E1y-Qq-fIH"/>
+                <outlet property="bgImage" destination="dgc-Wq-7C9" id="gjj-sG-qZf"/>
+                <outlet property="topConstraint" destination="Nlx-9G-uED" id="PfV-jI-YPa"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_bg" translatesAutoresizingMaskIntoConstraints="NO" id="dgc-Wq-7C9">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lCl-2C-qQn">
+                    <rect key="frame" x="45" y="507" width="285" height="60"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="0LS-3U-7Du"/>
+                    </constraints>
+                    <inset key="titleEdgeInsets" minX="0.0" minY="40" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" image="login_wechat">
+                        <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="LoginAction:" destination="-1" eventType="touchUpInside" id="YmJ-DB-Pz2"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="GD1-ej-b2v">
+                    <rect key="frame" x="102.5" y="64" width="150" height="150"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="GD1-ej-b2v" secondAttribute="height" id="4i2-wZ-m78"/>
+                        <constraint firstAttribute="height" constant="150" id="UXH-z3-7cZ"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="lCl-2C-qQn" secondAttribute="trailing" constant="45" id="1Y3-YD-fZd"/>
+                <constraint firstItem="lCl-2C-qQn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="45" id="EfP-tx-fMC"/>
+                <constraint firstItem="dgc-Wq-7C9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="KDc-cG-TfJ"/>
+                <constraint firstItem="GD1-ej-b2v" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="Nlx-9G-uED"/>
+                <constraint firstItem="dgc-Wq-7C9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="OBm-Vd-07a"/>
+                <constraint firstAttribute="bottom" secondItem="lCl-2C-qQn" secondAttribute="bottom" constant="100" id="P9E-or-bVh"/>
+                <constraint firstItem="lCl-2C-qQn" firstAttribute="top" relation="greaterThanOrEqual" secondItem="GD1-ej-b2v" secondAttribute="bottom" constant="40" id="Yso-qL-OIv"/>
+                <constraint firstItem="dgc-Wq-7C9" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="bqO-M9-87N"/>
+                <constraint firstAttribute="bottom" secondItem="dgc-Wq-7C9" secondAttribute="bottom" id="gZA-dc-gRF"/>
+                <constraint firstItem="lCl-2C-qQn" firstAttribute="centerX" secondItem="GD1-ej-b2v" secondAttribute="centerX" constant="10" id="sT7-Vl-9at"/>
+            </constraints>
+            <point key="canvasLocation" x="26" y="48"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="login_bg" width="375" height="667"/>
+        <image name="login_wechat" width="200" height="60"/>
+        <image name="logo" width="236" height="212"/>
+    </resources>
+</document>
