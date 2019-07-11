@@ -20,6 +20,7 @@
     self.navigationItem.title = @"首页";
     self.view.backgroundColor = kColor_Red;
     self.tableView.backgroundColor = kColor_Red;
+    DLog(@"测试");
 }
 
 - (void)didReceiveMemoryWarning {
