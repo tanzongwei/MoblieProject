@@ -21,6 +21,7 @@
     self.navigationItem.title = @"我的";
     self.view.backgroundColor = kColor_Blue;
     self.tableView.backgroundColor = kColor_Green;
+    DLog(@"我的");
 }
 
 - (void)didReceiveMemoryWarning {
